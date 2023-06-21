@@ -1,0 +1,46 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format="$all"
+add_newline=true
+
+scan_timeout=2000
+command_timeout=2000
+
+# basics
+[character]
+success_symbol='[➜](bold green) '
+error_symbol='[➜](bold red) '
+
+[hostname]
+ssh_only=false
+
+[username]
+show_always=true
+disabled=false
+
+[status]
+pipestatus=true
+disabled=false
+map_symbol=true
+
+[sudo]
+disabled=false
+
+[time]
+disabled=false
+
+# pc info
+[memory_usage]
+disabled=false
+
+[localip]
+disabled=false
+ssh_only=false
+
+[os]
+disabled=false
+
+# git
+[git_metrics]
+disabled=false
